@@ -1,0 +1,196 @@
+﻿<Window x:Class="ClassApp.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClassApp"
+        mc:Ignorable="d"
+        Title="Login" Height="554.201" Width="711.855" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,3.6,-4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="@comingpeople@163.com&#xD;&#xA;" HorizontalAlignment="Left" Margin="533,472,0,0" VerticalAlignment="Top" Width="169" Height="27"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="38" Margin="-1,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="703"/>
+        <Button Content="退出" HorizontalAlignment="Left" Height="31" Margin="340,464,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click"/>
+        <ComboBox x:Name="weekComboBox" HorizontalAlignment="Left" Height="38" Margin="300,0,0,0" VerticalAlignment="Top" Width="104" FontSize="22" SelectionChanged="weekComboBox_SelectionChanged">
+            <ComboBoxItem FontSize="12">第1周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第2周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第3周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第4周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第5周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第6周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第7周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第8周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第9周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第10周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第11周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第12周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第13周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第14周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第15周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第16周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第17周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第18周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第19周</ComboBoxItem>
+            <ComboBoxItem FontSize="12">第20周</ComboBoxItem>
+        </ComboBox>
+        <Button HorizontalAlignment="Left" Height="31" Margin="162,464,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click_1" RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Version. 2.0&#xD;&#xA;" HorizontalAlignment="Left" Margin="610,495,0,0" VerticalAlignment="Top" Width="82"/>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" HorizontalAlignment="Left" Height="44" Margin="-5,38,0,0" VerticalAlignment="Top" Width="81">
+            <Label x:Name="monthLable" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,10,0,0"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="44" Margin="76,38,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="44" Margin="157,38,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="44" Margin="238,38,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="44" Margin="319,38,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="44" Margin="400,38,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="44" Margin="481,38,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="44" Margin="562,38,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.5,0.5"/>
+        <Border BorderBrush="Black" BorderThickness="1,0" HorizontalAlignment="Left" Height="42" Margin="-5,82,0,0" VerticalAlignment="Top" Width="81">
+            <Label Content="       1&#xD;&#xA;   08：10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,7,0,0" Height="35" Width="61" FontSize="11"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" HorizontalAlignment="Left" Height="43" Margin="-5,124,0,0" VerticalAlignment="Top" Width="81">
+            <Label Content="       2&#xA;   09：05" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="61" Margin="9,8,0,0" FontSize="11"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0" HorizontalAlignment="Left" Height="43" Margin="-5,167,0,0" VerticalAlignment="Top" Width="81">
+            <Label Content="       3&#xA;   10：10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,7,0,0" Height="35" Width="61" FontSize="11"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" HorizontalAlignment="Left" Height="42" Margin="-5,210,0,0" VerticalAlignment="Top" Width="81">
+            <Label Content="       4&#xA;   11：05" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,7,0,0" Height="35" Width="61" FontSize="11"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0" HorizontalAlignment="Left" Height="42" Margin="-5,252,0,0" VerticalAlignment="Top" Width="81">
+            <Label Content="       5&#xA;   14：20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,7,0,0" Height="35" Width="61" FontSize="11"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" HorizontalAlignment="Left" Height="42" Margin="-5,294,0,0" VerticalAlignment="Top" Width="81">
+            <Label Content="       6&#xA;   15：15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,7,0,0" Height="35" Width="61" FontSize="11"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0" HorizontalAlignment="Left" Height="42" Margin="-5,337,0,0" VerticalAlignment="Top" Width="81">
+            <Label Content="       7&#xA;   16：20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,7,0,0" Height="35" Width="61" FontSize="11"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" HorizontalAlignment="Left" Height="42" Margin="-5,378,0,0" VerticalAlignment="Top" Width="81">
+            <Label Content="       8&#xA;   17：15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,7,0,-1" Height="35" Width="61" FontSize="11"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="76,82,0,0" VerticalAlignment="Top" Width="81" Visibility="Hidden">
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="76,167,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="76,252,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="76,335,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label Content="  周 一" Margin="81,42,550,447" RenderTransformOrigin="0.68,0.579" FontSize="18"/>
+        <Label Content="  周 二" Margin="162,42,469,447" RenderTransformOrigin="0.68,0.579" FontSize="18"/>
+        <Label Content="  周 三" Margin="243,43,388,436" RenderTransformOrigin="0.68,0.579" FontSize="18"/>
+        <Label Content="  周 四" Margin="324,42,307,436" RenderTransformOrigin="0.68,0.579" FontSize="18"/>
+        <Label Content="  周 五" Margin="405,43,226,436" RenderTransformOrigin="0.68,0.579" FontSize="18"/>
+        <Label Content="  周 六" Margin="486,43,145,436" RenderTransformOrigin="0.68,0.579" FontSize="18"/>
+        <Label Content="  周 日" Margin="567,43,64,436" RenderTransformOrigin="0.68,0.579" FontSize="18"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="157,82,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="157,167,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="157,252,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="157,335,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="238,335,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="238,252,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="238,167,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="238,82,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="319,82,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="319,167,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="1.052,2.247"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="319,252,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="1.052,2.247"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="319,335,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="1.052,2.247"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="400,82,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="481,82,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="562,82,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="400,167,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="481,167,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="562,167,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="400,252,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="481,252,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="562,252,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="400,335,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="481,335,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="562,335,0,0" VerticalAlignment="Top" Width="81"/>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" HorizontalAlignment="Left" Height="85" Margin="76,82,0,0" VerticalAlignment="Top" Width="81"/>
+        <Button x:Name="addClassbutton11" Height="30" Margin="100,110,568,389" VerticalAlignment="Center" Width="34" ToolTip="添加课程" BorderThickness="0" Content="" FontSize="24" Background="White" Foreground="#FFE81010" Click="addClassbutton11_Click" RenderTransformOrigin="0.417,0.3" MouseEnter="addClassbutton11_MouseEnter_1" MouseLeave="addClassbutton11_MouseLeave" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="addClassbutton12" Height="30" Margin="181,110,487,389" VerticalAlignment="Center" Width="34" ToolTip="添加课程" BorderThickness="0" Content="" FontSize="24" Background="White" Foreground="#FFE81010" Click="addClassbutton12_Click" RenderTransformOrigin="0.417,0.3" MouseEnter="addClassbutton12_MouseEnter_1" MouseLeave="addClassbutton12_MouseLeave" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="addClassButton13" HorizontalAlignment="Center" Margin="264,110,404,0" VerticalAlignment="Top" Width="34" RenderTransformOrigin="0.334,0.529" Height="30" Content="" FontSize="24" Background="White" BorderThickness="0" Click="addclassButton13_click" MouseEnter="addClassButton13_MouseEnter" MouseLeave="addClassButton13_MouseLeave" HorizontalContentAlignment="Center" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton14" HorizontalAlignment="Center" Margin="348,110,320,0" VerticalAlignment="Top" Width="34" Height="30" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addclassButton14_click" MouseEnter="addClassButton14_MouseEnter" MouseLeave="addClassButton14_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="0.976,0.537" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton15" HorizontalAlignment="Left" Height="30" Margin="427,110,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addclassButton15_click" MouseEnter="addClassButton15_MouseEnter" MouseLeave="addClassButton15_MouseLeave" HorizontalContentAlignment="Center" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton16" HorizontalAlignment="Left" Height="30" Margin="507,110,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addclassButton16_click" MouseEnter="addClassButton16_MouseEnter" MouseLeave="addClassButton16_MouseLeave" HorizontalContentAlignment="Center" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton17" HorizontalAlignment="Left" Height="30" Margin="587,110,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addclassButton17_click" MouseEnter="addClassButton17_MouseEnter" MouseLeave="addClassButton17_MouseLeave" HorizontalContentAlignment="Center" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton21" HorizontalAlignment="Left" Height="30" Margin="100,198,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addclassButton21_click" MouseEnter="addClassButton21_MouseEnter" MouseLeave="addClassButton21_MouseLeave" HorizontalContentAlignment="Center" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton22" HorizontalAlignment="Left" Height="30" Margin="181,198,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton22_Click" MouseEnter="addClassButton22_MouseEnter" MouseLeave="addClassButton22_MouseLeave" HorizontalContentAlignment="Center" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton23" HorizontalAlignment="Left" Height="30" Margin="264,198,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton23_Click" MouseEnter="addClassButton23_MouseEnter" MouseLeave="addClassButton23_MouseLeave" HorizontalContentAlignment="Center" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton24" HorizontalAlignment="Left" Height="30" Margin="340,198,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton24_Click" MouseEnter="addClassButton24_MouseEnter" MouseLeave="addClassButton24_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton25" HorizontalAlignment="Left" Height="30" Margin="427,198,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton25_Click" MouseEnter="addClassButton25_MouseEnter" MouseLeave="addClassButton25_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton26" HorizontalAlignment="Left" Height="30" Margin="507,198,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton26_Click" MouseEnter="addClassButton26_MouseEnter" MouseLeave="addClassButton26_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton27" HorizontalAlignment="Left" Height="30" Margin="587,198,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton27_Click" MouseEnter="addClassButton27_MouseEnter" MouseLeave="addClassButton27_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton31" HorizontalAlignment="Left" Height="30" Margin="100,282,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton31_Click" MouseEnter="addClassButton31_MouseEnter" MouseLeave="addClassButton31_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton32" HorizontalAlignment="Left" Height="30" Margin="181,282,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton32_Click" MouseEnter="addClassButton32_MouseEnter" MouseLeave="addClassButton32_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton33" HorizontalAlignment="Left" Height="30" Margin="264,282,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton33_Click" MouseEnter="addClassButton33_MouseEnter" MouseLeave="addClassButton33_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton34" HorizontalAlignment="Left" Height="30" Margin="342,282,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton34_Click" MouseEnter="addClassButton34_MouseEnter" MouseLeave="addClassButton34_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton35" HorizontalAlignment="Left" Height="30" Margin="427,282,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton35_Click" MouseEnter="addClassButton35_MouseEnter" MouseLeave="addClassButton35_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton36" HorizontalAlignment="Left" Height="30" Margin="507,282,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton36_Click" MouseEnter="addClassButton36_MouseEnter" MouseLeave="addClassButton36_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton37" HorizontalAlignment="Left" Height="30" Margin="587,282,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton37_Click" MouseEnter="addClassButton37_MouseEnter" MouseLeave="addClassButton37_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton41" HorizontalAlignment="Left" Height="30" Margin="100,367,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton41_Click" MouseEnter="addClassButton41_MouseEnter" MouseLeave="addClassButton41_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton42" HorizontalAlignment="Left" Height="30" Margin="181,367,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton42_Click" MouseEnter="addClassButton42_MouseEnter" MouseLeave="addClassButton42_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton43" HorizontalAlignment="Left" Height="30" Margin="264,367,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton43_Click" MouseEnter="addClassButton43_MouseEnter" MouseLeave="addClassButton43_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton44" HorizontalAlignment="Left" Height="30" Margin="348,367,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton44_Click" MouseEnter="addClassButton44_MouseEnter" MouseLeave="addClassButton44_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton45" HorizontalAlignment="Left" Height="30" Margin="427,367,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton45_Click" MouseEnter="addClassButton45_MouseEnter" MouseLeave="addClassButton45_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton46" HorizontalAlignment="Left" Height="30" Margin="507,367,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton46_Click" MouseEnter="addClassButton46_MouseEnter" MouseLeave="addClassButton46_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <Button x:Name="addClassButton47" HorizontalAlignment="Left" Height="30" Margin="587,367,0,0" VerticalAlignment="Top" Width="34" FontSize="24" Content="" Background="White" BorderThickness="0" Click="addClassButton47_Click" MouseEnter="addClassButton47_MouseEnter" MouseLeave="addClassButton47_MouseLeave" HorizontalContentAlignment="Center" RenderTransformOrigin="1.034,0.375" ToolTip="添加课程"/>
+        <TextBlock x:Name="_11" HorizontalAlignment="Left" Height="42" Margin="76,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_11ClassRoom" HorizontalAlignment="Left" Height="42" Margin="76,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_12" HorizontalAlignment="Left" Height="42" Margin="157,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_12ClassRoom" HorizontalAlignment="Left" Height="42" Margin="157,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_13" HorizontalAlignment="Left" Height="42" Margin="238,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_13ClassRoom" HorizontalAlignment="Left" Height="42" Margin="238,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_14" HorizontalAlignment="Left" Height="42" Margin="319,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_14ClassRoom" HorizontalAlignment="Left" Height="42" Margin="319,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_15" HorizontalAlignment="Left" Height="42" Margin="400,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_15ClassRoom" HorizontalAlignment="Left" Height="42" Margin="400,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_16" HorizontalAlignment="Left" Height="42" Margin="481,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_16ClassRoom" HorizontalAlignment="Left" Height="42" Margin="481,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_17" HorizontalAlignment="Left" Height="42" Margin="562,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_17ClassRoom" HorizontalAlignment="Left" Height="42" Margin="562,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4" RenderTransformOrigin="1.703,0.771"/>
+        <TextBlock x:Name="_21" HorizontalAlignment="Left" Height="42" Margin="76,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_21ClassRoom" HorizontalAlignment="Left" Height="42" Margin="76,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_22" HorizontalAlignment="Left" Height="42" Margin="157,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_22ClassRoom" HorizontalAlignment="Left" Height="42" Margin="157,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_23" HorizontalAlignment="Left" Height="42" Margin="238,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_23ClassRoom" HorizontalAlignment="Left" Height="42" Margin="238,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_24" HorizontalAlignment="Left" Height="42" Margin="319,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_24ClassRoom" HorizontalAlignment="Left" Height="42" Margin="319,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_25" HorizontalAlignment="Left" Height="42" Margin="400,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_25ClassRoom" HorizontalAlignment="Left" Height="42" Margin="400,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_26" HorizontalAlignment="Left" Height="42" Margin="481,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_26ClassRoom" HorizontalAlignment="Left" Height="42" Margin="481,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_27" HorizontalAlignment="Left" Height="42" Margin="562,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_27ClassRoom" HorizontalAlignment="Left" Height="42" Margin="562,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_31" HorizontalAlignment="Left" Height="42" Margin="76,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_31ClassRoom" HorizontalAlignment="Left" Height="42" Margin="76,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_32" HorizontalAlignment="Left" Height="42" Margin="157,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_32ClassRoom" HorizontalAlignment="Left" Height="42" Margin="157,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_33" HorizontalAlignment="Left" Height="42" Margin="238,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_33ClassRoom" HorizontalAlignment="Left" Height="42" Margin="238,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_34" HorizontalAlignment="Left" Height="42" Margin="319,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_34ClassRoom" HorizontalAlignment="Left" Height="42" Margin="319,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_35" HorizontalAlignment="Left" Height="42" Margin="400,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_35ClassRoom" HorizontalAlignment="Left" Height="42" Margin="400,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_36" HorizontalAlignment="Left" Height="42" Margin="481,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_36ClassRoom" HorizontalAlignment="Left" Height="42" Margin="481,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_37" HorizontalAlignment="Left" Height="42" Margin="562,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_37ClassRoom" HorizontalAlignment="Left" Height="42" Margin="562,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_41" HorizontalAlignment="Left" Height="42" Margin="76,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_41ClassRoom" HorizontalAlignment="Left" Height="42" Margin="76,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_42" HorizontalAlignment="Left" Height="42" Margin="157,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_42ClassRoom" HorizontalAlignment="Left" Height="42" Margin="157,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_43" HorizontalAlignment="Left" Height="42" Margin="238,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_43ClassRoom" HorizontalAlignment="Left" Height="42" Margin="238,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_44" HorizontalAlignment="Left" Height="42" Margin="319,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_44ClassRoom" HorizontalAlignment="Left" Height="42" Margin="319,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_45" HorizontalAlignment="Left" Height="42" Margin="400,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_45ClassRoom" HorizontalAlignment="Left" Height="42" Margin="400,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_46" HorizontalAlignment="Left" Height="42" Margin="481,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_46ClassRoom" HorizontalAlignment="Left" Height="42" Margin="481,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_47" HorizontalAlignment="Left" Height="42" Margin="562,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+        <TextBlock x:Name="_47ClassRoom" HorizontalAlignment="Left" Height="42" Margin="562,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontSize="16" Foreground="#FF5FCCF4"/>
+    </Grid>
+</Window>
