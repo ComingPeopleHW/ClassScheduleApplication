@@ -56,11 +56,11 @@ namespace ClassApp
             {
                 MessageBox.Show("验证码错误");
             }
-            else  //insert数据库的操作
+            else  //数据库的操作
             {
                 SqlConnection sqlCon = new SqlConnection() //连接数据库
                 {
-                    ConnectionString = @"server=119.29.217.67;DataBase=Csharp;User Id=csharp;Password=csharp;"
+                    ConnectionString = @"server=xxxxxx;DataBase=xxxxxx;User Id=xxxxx;Password=xxxxx;"
                 };
                 string addAcountToDB = "";
                 addAcountToDB = $"INSERT INTO UserInformation(UserName,PassWord,Week) VALUES (\'{registeredAccountNumberTextBox.Text}\',\'{registeredPassWordBox.Password}\',0)";
@@ -130,7 +130,7 @@ namespace ClassApp
         {
             SqlConnection sqlCon = new SqlConnection() //连接数据库
             {
-                ConnectionString = @"server=119.29.217.67;DataBase=Csharp;User Id=csharp;Password=csharp;"
+                ConnectionString = @"server=xxxxxx;DataBase=xxxxx;User Id=xxxxx;Password=xxxxx;"
             };
             sqlCon.Open();
             SqlCommand sqlCmd2 = new SqlCommand("select * from dbo.UserInformation", sqlCon);

@@ -26,7 +26,7 @@ namespace ClassApp
             int accountNumberState = 0;  //账号登录状态
             SqlConnection sqlCon = new SqlConnection() //连接数据库
             {
-                ConnectionString = @"server=119.29.217.67;DataBase=Csharp;User Id=csharp;Password=csharp;"
+                ConnectionString = @"server=xxxxxx;DataBase=xxxxx;User Id=xxxxx;Password=xxxxx;"
             };
             SqlCommand sqlCmd = new SqlCommand("select * from dbo.UserInformation", sqlCon);
             sqlCon.Open();
@@ -58,11 +58,12 @@ namespace ClassApp
             }
             if(accountNumberState==1)
             {
-                //初始过程中传入账号ID等
-                Login loginWindow = new Login(week,id,userName);
-                sqlCon.Close();
-                loginWindow.Show();
-                this.Close();
+                MessageBox.Show("登录成功");
+                ////初始过程中传入账号ID等
+                //Login loginWindow = new Login(week,id,userName);
+                //sqlCon.Close();
+                //loginWindow.Show();
+                //this.Close();
             }
             else
             {
