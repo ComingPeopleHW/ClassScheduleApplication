@@ -1,0 +1,83 @@
+﻿<Window x:Class="ClassApp.Delete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClassApp"
+        mc:Ignorable="d"
+        Title="修改课程" Height="473" Width="412" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="修改课程" HorizontalAlignment="Left" Height="44" Margin="142,10,0,0" VerticalAlignment="Top" Width="119" RenderTransformOrigin="0.974,0.776" FontSize="26" FontFamily="Impact" FontWeight="Bold" Foreground="#FF9B3737"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="2" Margin="0,59,-2,0" VerticalAlignment="Top" Width="406"/>
+        <TextBox x:Name="classNameTextBox" HorizontalAlignment="Left" Height="34" Margin="70,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" TabIndex="1" TextChanged="classNameTextBox_TextChanged">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
+                    <VisualBrush.Visual>
+                        <TextBlock  Text="更改课程名称"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox x:Name="classRoomTextBox" HorizontalAlignment="Left" Height="34" Margin="70,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" TabIndex="2">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
+                    <VisualBrush.Visual>
+                        <TextBlock  Text="更改课程教室"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox x:Name="classTeacherTextBox" HorizontalAlignment="Left" Height="34" Margin="70,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" TabIndex="3">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
+                    <VisualBrush.Visual>
+                        <TextBlock  Text="教师"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <Button x:Name="changeClassButton" Content="修改" HorizontalAlignment="Left" Height="34" Margin="56,381,0,0" VerticalAlignment="Top" Width="136" Background="#FF5FCCF4" Foreground="#FF36823A" FontSize="18" Click="changeClassButton_Click" TabIndex="4"/>
+        <Button x:Name="deleteClassButton" Content="删除本课" HorizontalAlignment="Left" Height="34" Margin="212,381,0,0" VerticalAlignment="Top" Width="136" Background="#FF5FCCF4" Foreground="Red" FontSize="18" Click="deleteClassButton_Click" TabIndex="4"/>
+        <Label x:Name="PromptInformationLable" Content="" HorizontalAlignment="Left" Height="26" Margin="70,146,0,0" VerticalAlignment="Top" Width="275" FontSize="14" Background="Transparent"/>
+
+    </Grid>
+</Window>
